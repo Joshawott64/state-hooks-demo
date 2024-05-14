@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Die from "./Die.jsx";
-// import MovieList from "./MovieList.jsx";
+import Die from "./Die.jsx";
+import MovieList from "./MovieList.jsx";
 import Layout from "./Layout.jsx";
-// import Pokemon from "./Pokemon.jsx";
-// import MissingKey from "./MissingKey.jsx";
+import Pokemon from "./Pokemon.jsx";
+import MissingKey from "./MissingKey.jsx";
 // import Counters from "./Counters.jsx";
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/* <Route path="/dice" element={(
+          <Route path="/dice" element={(
             <div>
               <Die sides="4" />
               <Die sides="6" />
@@ -23,11 +23,11 @@ export default function App() {
               <Die sides="12" />
               <Die sides="20" />
             </div>
-          )} /> */}
-          {/* <Route path="/movies" element={<MovieList />} /> */}
-          {/* <Route path="/missing-key" element={<MissingKey />} /> */}
+          )} />
+          <Route path="/movies" element={<MovieList />} />
+          <Route path="/missing-key" element={<MissingKey />} />
           {/* <Route path="/counters" element={<Counters />} /> */}
-          {/* <Route path="/pokemon" element={<Pokemon num={10} />} /> */}
+          <Route path="/pokemon" element={<Pokemon num={10} />} />
         </Route>
       </Routes>
     </BrowserRouter>
